@@ -14,15 +14,21 @@
         fill: #fff;
     }
 
-    &__socials {
+    &__social {
         display: inline-flex;
         justify-content: space-between;
     }
 
     &__icon {
+        fill: #fff;
         width: 2rem;
         height: 2rem;
+
+        &:hover {
+            fill: $bright-red;
+        }
     }
+
 
     &__item {
         align-self: stretch;

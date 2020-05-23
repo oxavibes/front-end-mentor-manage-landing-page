@@ -149,12 +149,15 @@ h2 {
     justify-content: space-between; }
   .footer__logo {
     fill: #fff; }
-  .footer__socials {
+  .footer__social {
     display: inline-flex;
     justify-content: space-between; }
   .footer__icon {
+    fill: #fff;
     width: 2rem;
     height: 2rem; }
+    .footer__icon:hover {
+      fill: #f25f3a; }
   .footer__item {
     align-self: stretch;
     display: flex;
