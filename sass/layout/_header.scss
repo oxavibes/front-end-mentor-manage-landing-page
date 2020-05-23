@@ -1,0 +1,42 @@
+.header {
+    padding: 4rem 0;
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    &__logo {
+        // display: inline-block;
+        // vertical-align: middle;
+    }
+
+    &__nav {
+        // flex: 1;
+    
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+    }
+
+    &__list-item{
+        margin-right: 3rem;
+        transition: all .2s;
+    }
+    
+    &__link,
+    &__link:active,
+    &__link:visited {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: $dark-blue;
+        font-weight: 700;
+        vertical-align: top;
+    }
+
+    &__link:hover {
+        color: lighten($dark-blue, 50);
+    }
+}

@@ -1,0 +1,99 @@
+.about {
+    font-size: 1.4rem;
+    padding-top: 6rem;
+    margin-bottom: 6rem;
+    
+    &__flex {
+        display: flex;
+    }
+
+    &__description {
+        flex: 0 0 50%;
+    }
+
+    &__heading {
+        font-size: 3.5rem;
+        color: $dark-blue;
+        font-weight: 700;
+        margin-bottom: 3rem;
+    }
+
+    &__text {
+        width: 60%;
+        color: $dark-rayish-blue;
+        font-weight: $font-weight-light;
+    }
+
+    &__list {
+        flex: 0 0 50%;
+    }
+
+    &__list-item {
+        display: flex;
+        margin-bottom: 3rem;
+    }
+
+    &__list-title {
+        color: $dark-blue;
+        padding-top: .5rem;
+        margin-bottom: 2rem;
+    }
+
+    &__list-number {
+        font-weight: 700;
+        color: #fff;
+        display: inline-block;
+        margin-right: 2rem;
+        padding: .7rem 2rem;
+        border-radius: 100px;
+        background-color: $bright-red;
+    }
+
+    &__list-text {
+        color: $dark-rayish-blue;
+        font-weight: $font-weight-light;
+    }
+}
+
+.testimonials {
+    padding: 6rem 0;
+    margin-bottom: 6rem;
+    overflow-x: hidden;
+    text-align: center;
+
+    &-heading {
+        font-size: 3.5rem;
+        color: $dark-blue;
+        margin-bottom: 8rem;
+    }
+
+    &-box {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: -20rem;
+        margin-right: -20rem;
+        margin-bottom: 6rem;
+    }
+}
+
+.call-to-action {
+    background-image: url(../../images/bg-simplify-section-desktop.svg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $bright-red;
+    padding: 5rem 0;
+    
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        color: #fff;
+        font-weight: 700;
+        font-size: 3.5rem;
+        line-height: 1.2;
+    }
+}
