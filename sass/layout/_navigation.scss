@@ -25,18 +25,24 @@
     }
 
     &__checkbox {
-
-    }
-
-    &__icon {
-
+        display: none;
     }
 
     &__button {
+        display: none;
+        order: 1;
+    }
 
+    &__icon {
+        width: 2.5rem;
+        height: 2.5rem;
+
+        &--hidden {
+            display: none;
+        }
     }
 
     &__background {
-        
+        display: none;
     }
 }
