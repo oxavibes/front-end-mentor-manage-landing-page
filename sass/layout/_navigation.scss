@@ -1,0 +1,42 @@
+.navigation {
+
+    &__list {
+        display: flex;
+        list-style: none;
+    }
+
+    &__list-item{
+        margin-right: 3rem;
+        transition: all .2s;
+    }
+    
+    &__link,
+    &__link:active,
+    &__link:visited {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: $dark-blue;
+        font-weight: 700;
+        vertical-align: top;
+    }
+
+    &__link:hover {
+        color: lighten($dark-blue, 50);
+    }
+
+    &__checkbox {
+
+    }
+
+    &__icon {
+
+    }
+
+    &__button {
+
+    }
+
+    &__background {
+        
+    }
+}
