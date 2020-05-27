@@ -9,6 +9,10 @@
 
 html {
     font-size: 62.5%;
+
+    @include respond(tab-small) {
+        font-size: 55%;
+    }
 }
 
 body {
@@ -31,4 +35,8 @@ h2 {
 .container {
     max-width: 96rem;
     margin: 0 auto;
+    
+    @include respond(tab-port) {
+        padding: 0 3rem;
+    }
 }

@@ -3,8 +3,11 @@
     padding: 1rem 4rem;
     background: $very-light-gray;
     position: relative;
-
     margin-bottom: -1rem;
+
+    @include respond(phone-small) {
+        // flex: 0 0 45%;
+    }
 
 
     & > * + * {
@@ -31,7 +34,7 @@
         // display: inline-block;
         font-size: 1.4rem;
         word-spacing: 1px;
-        line-height: 1.8;
+        line-height: $font-line-height-sm;
         font-weight: 300;
         color: $dark-rayish-blue;
     }

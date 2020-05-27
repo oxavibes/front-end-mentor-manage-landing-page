@@ -1,5 +1,9 @@
 .navigation {
 
+    @include respond(phone) {
+        display: none;
+    }
+
     &__list {
         display: flex;
         list-style: none;
@@ -31,6 +35,10 @@
     &__button {
         display: none;
         order: 1;
+
+        @include respond(phone){
+            display: inline-block;
+        }
     }
 
     &__icon {

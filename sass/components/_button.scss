@@ -46,4 +46,10 @@
         }
     }
 
+    &--hidden-tab {
+        @include respond(tab-small) {
+            display: none;
+        }
+    }
+
 }

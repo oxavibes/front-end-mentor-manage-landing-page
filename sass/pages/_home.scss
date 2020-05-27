@@ -2,13 +2,30 @@
     font-size: 1.4rem;
     padding-top: 6rem;
     margin-bottom: 6rem;
+
+    @include respond(phone){
+        padding-top: 0;
+        margin-bottom: 2rem;
+    }
+
     
     &__flex {
         display: flex;
+
+        @include respond(phone){
+            flex-direction: column;
+            padding-top: 0;
+        }
     }
 
     &__description {
         flex: 0 0 50%;
+
+        @include respond(phone){
+            text-align: center;
+            padding: 0 3rem;
+            margin-bottom: 4rem;
+        }
     }
 
     &__heading {
@@ -16,12 +33,21 @@
         color: $dark-blue;
         font-weight: 700;
         margin-bottom: 3rem;
+
+        @include respond(phone){
+            margin-bottom: 1rem;
+        }
     }
 
     &__text {
         width: 60%;
         color: $dark-rayish-blue;
         font-weight: $font-weight-light;
+
+        @include respond(phone){
+            width: 100%;
+            line-height: $font-line-height-sm;
+        }
     }
 
     &__list {
@@ -37,6 +63,10 @@
         color: $dark-blue;
         padding-top: .5rem;
         margin-bottom: 2rem;
+
+        @include respond(phone) {
+            margin-bottom: .5rem;
+        }
     }
 
     &__list-number {
@@ -52,6 +82,15 @@
     &__list-text {
         color: $dark-rayish-blue;
         font-weight: $font-weight-light;
+        
+        @include respond(phone) {
+            line-height: $font-line-height-sm;
+        }
+
+        @include respond(phone) {
+            margin-left: -7rem;
+            text-align: justify;
+        }
     }
 }
 
@@ -60,6 +99,11 @@
     margin-bottom: 6rem;
     overflow-x: hidden;
     text-align: center;
+
+    @include respond(phone){
+        padding: 3rem 0;
+        margin-bottom: 2rem;
+    }
 
     &-heading {
         font-size: 3.5rem;
@@ -73,6 +117,11 @@
         margin-left: -20rem;
         margin-right: -20rem;
         margin-bottom: 6rem;
+
+        @include respond(phone) {
+            margin-left: -41rem;
+            margin-right: -41rem;
+        }
     }
 }
 
@@ -83,17 +132,34 @@
     background-size: cover;
     background-color: $bright-red;
     padding: 5rem 0;
+
+    @include respond(phone) {
+        padding: 8rem 4rem;
+    }
     
     &__flex {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include respond(phone){
+            flex-direction: column;
+        }
     }
 
     &__title {
         color: #fff;
-        font-weight: 700;
+        font-weight: 500;
         font-size: 3.5rem;
         line-height: 1.2;
+
+        @include respond(tab-small) {
+            // font-size: 3rem;
+            text-align: center;
+        }
+
+        @include respond(phone){
+            margin-bottom: 3rem;
+        }
     }
 }

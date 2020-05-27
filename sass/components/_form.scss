@@ -1,5 +1,9 @@
 .form {
 
+    @include respond(tab-small){
+        margin-bottom: 4rem;
+    }
+
     &__control {
 
     }
@@ -13,6 +17,10 @@
         padding: .8rem 1.5rem;
         border-radius: 100px;
         margin-right: .5rem;
+
+        @include respond(tab-small){
+            width: 60%;
+        }
     }
 
 }
