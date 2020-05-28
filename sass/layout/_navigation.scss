@@ -38,6 +38,10 @@
     &__list-item {
         margin-right: 3rem;
         transition: all .2s;
+
+        @include respond(phone) {
+            margin-right: 0;
+        }
     }
 
     &__link,
