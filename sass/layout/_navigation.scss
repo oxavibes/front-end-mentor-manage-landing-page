@@ -68,6 +68,7 @@
 
     &__background {
         position: fixed;
+        width: 0;
         z-index: 20;
         top: 0;
         left: 0;
@@ -89,6 +90,7 @@
 
     &__checkbox:checked~&__background {
         @include respond(phone) {
+            width: 100%;
             background: linear-gradient(to bottom, $light-bg-color, $dark-bg-color);
         }
     }
