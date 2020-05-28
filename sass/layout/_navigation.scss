@@ -9,6 +9,7 @@
         z-index: 50;
         border-radius: 5px;
         transform: translateY(-50rem);
+        transition: all .4s ease-in-out;
 
         &__list {
             display: flex;
@@ -101,7 +102,7 @@
 
     &__checkbox:not(:checked) ~ .navigation {
         @include respond(phone) {
-            animation: moveInUp .6s ease-in;
+            // opacity: 0;
         }
     }
 
