@@ -14,7 +14,7 @@
 
 </head>
 
-<body>
+<body class="preload">
 
   <header class="header container">
     <img width="146" height="24" src="images/logo.svg" alt="Logo" class="header__logo">
@@ -272,6 +272,11 @@
       </div>
 
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelector('.preload').classList.remove('preload');
+      })
+    </script>
   </footer>
 
 
