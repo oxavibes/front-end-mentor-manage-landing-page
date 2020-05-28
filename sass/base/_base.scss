@@ -44,4 +44,8 @@ h2 {
     @include respond(tab-port) {
         padding: 0 3rem;
     }
+
+    @include respond(big-desktop) {
+        max-width: 120rem;
+    }
 }
