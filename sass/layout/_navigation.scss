@@ -1,7 +1,33 @@
 .navigation {
 
     @include respond(phone) {
-        display: none;
+        position: fixed;
+        top: 10rem;
+        left: 3rem;
+        right: 3rem;
+        background: #fff;
+        z-index: 50;
+        border-radius: 5px;
+        transform: translateY(-50rem);
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            padding: 3rem;
+        }
+
+        &__list-item {
+            margin-right: 0;
+            text-align: center;
+
+        }
+
+        &__link {
+            font-size: 1.4rem;
+            display: block;
+            padding: 2rem 0;
+            font-weight: 700;
+        }
     }
 
     &__list {
@@ -9,11 +35,11 @@
         list-style: none;
     }
 
-    &__list-item{
+    &__list-item {
         margin-right: 3rem;
         transition: all .2s;
     }
-    
+
     &__link,
     &__link:active,
     &__link:visited {
@@ -22,21 +48,67 @@
         color: $dark-blue;
         font-weight: 700;
         vertical-align: top;
+
+        transition: background, color .1s;
     }
 
     &__link:hover {
         color: lighten($dark-blue, 50);
+
+        @include respond(phone) {
+            color: #fff;
+            background: $bright-red;
+        }
+    }
+
+    &__background {
+        position: fixed;
+        z-index: 20;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 
     &__checkbox {
         display: none;
     }
 
-    &__button {
+    &__checkbox:checked~&__button &__icon--hamb {
         display: none;
+    }
+
+    &__checkbox:checked~&__button &__icon--close {
+        display: inline-block;
+    }
+
+    &__checkbox:checked~&__background {
+        @include respond(phone) {
+            background: linear-gradient(to bottom, $light-bg-color, $dark-bg-color);
+        }
+    }
+
+    &__checkbox:checked ~ .navigation {
+        @include respond(phone) {
+            transform: translateY(0);
+            animation: moveInBottom .9s ease-out;
+        }
+    }
+
+    &__checkbox:not(:checked) ~ .navigation {
+        @include respond(phone) {
+            animation: moveInUp .6s ease-in;
+        }
+    }
+
+    &__button {
+        cursor: pointer;
+        display: none;
+        position: relative;
+        z-index: 30;
         order: 1;
 
-        @include respond(phone){
+        @include respond(phone) {
             display: inline-block;
         }
     }
@@ -45,12 +117,11 @@
         width: 2.5rem;
         height: 2.5rem;
 
-        &--hidden {
+        &--hamb {}
+
+        &--close {
             display: none;
         }
     }
 
-    &__background {
-        display: none;
-    }
 }
