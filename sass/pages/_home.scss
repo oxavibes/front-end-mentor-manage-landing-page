@@ -1,165 +1,164 @@
 .about {
-    font-size: 1.4rem;
-    padding-top: 6rem;
-    margin-bottom: 6rem;
+  font-size: 1.4rem;
+  padding-top: 6rem;
+  margin-bottom: 6rem;
 
-    @include respond(phone){
-        padding-top: 0;
-        margin-bottom: 2rem;
+  @include respond(phone) {
+    padding-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  &__flex {
+    display: flex;
+
+    @include respond(phone) {
+      flex-direction: column;
+      padding-top: 0;
+    }
+  }
+
+  &__description {
+    flex: 0 0 50%;
+
+    @include respond(phone) {
+      text-align: center;
+      padding: 0 3rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__heading {
+    font-size: 3.5rem;
+    color: $dark-blue;
+    font-weight: 700;
+    margin-bottom: 3rem;
+
+    @include respond(phone) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__text {
+    width: 60%;
+    color: $dark-rayish-blue;
+    font-weight: $font-weight-light;
+
+    @include respond(phone) {
+      width: 100%;
+      line-height: $font-line-height-sm;
+    }
+  }
+
+  &__list {
+    flex: 0 0 50%;
+  }
+
+  &__list-item {
+    display: flex;
+    margin-bottom: 3rem;
+  }
+
+  &__list-title {
+    color: $dark-blue;
+    padding-top: 0.5rem;
+    margin-bottom: 2rem;
+
+    @include respond(phone) {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__list-number {
+    font-weight: 700;
+    color: #fff;
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 0.7rem 2rem;
+    border-radius: 100px;
+    background-color: $bright-red;
+  }
+
+  &__list-text {
+    color: $dark-rayish-blue;
+    font-weight: $font-weight-light;
+
+    @include respond(phone) {
+      line-height: $font-line-height-sm;
     }
 
-    
-    &__flex {
-        display: flex;
-
-        @include respond(phone){
-            flex-direction: column;
-            padding-top: 0;
-        }
+    @include respond(phone) {
+      margin-left: -7rem;
+      text-align: justify;
     }
-
-    &__description {
-        flex: 0 0 50%;
-
-        @include respond(phone){
-            text-align: center;
-            padding: 0 3rem;
-            margin-bottom: 4rem;
-        }
-    }
-
-    &__heading {
-        font-size: 3.5rem;
-        color: $dark-blue;
-        font-weight: 700;
-        margin-bottom: 3rem;
-
-        @include respond(phone){
-            margin-bottom: 1rem;
-        }
-    }
-
-    &__text {
-        width: 60%;
-        color: $dark-rayish-blue;
-        font-weight: $font-weight-light;
-
-        @include respond(phone){
-            width: 100%;
-            line-height: $font-line-height-sm;
-        }
-    }
-
-    &__list {
-        flex: 0 0 50%;
-    }
-
-    &__list-item {
-        display: flex;
-        margin-bottom: 3rem;
-    }
-
-    &__list-title {
-        color: $dark-blue;
-        padding-top: .5rem;
-        margin-bottom: 2rem;
-
-        @include respond(phone) {
-            margin-bottom: .5rem;
-        }
-    }
-
-    &__list-number {
-        font-weight: 700;
-        color: #fff;
-        display: inline-block;
-        margin-right: 2rem;
-        padding: .7rem 2rem;
-        border-radius: 100px;
-        background-color: $bright-red;
-    }
-
-    &__list-text {
-        color: $dark-rayish-blue;
-        font-weight: $font-weight-light;
-        
-        @include respond(phone) {
-            line-height: $font-line-height-sm;
-        }
-
-        @include respond(phone) {
-            margin-left: -7rem;
-            text-align: justify;
-        }
-    }
+  }
 }
 
 .testimonials {
-    padding: 6rem 0;
+  padding: 6rem 0;
+  margin-bottom: 6rem;
+  overflow-x: hidden;
+  text-align: center;
+
+  @include respond(phone) {
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+  }
+
+  &-heading {
+    font-size: 3.5rem;
+    color: $dark-blue;
+    margin-bottom: 8rem;
+  }
+
+  &-box {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -20rem;
+    margin-right: -20rem;
     margin-bottom: 6rem;
-    overflow-x: hidden;
-    text-align: center;
 
-    @include respond(phone){
-        padding: 3rem 0;
-        margin-bottom: 2rem;
+    @include respond(phone) {
+      margin-left: -41rem;
+      margin-right: -41rem;
     }
-
-    &-heading {
-        font-size: 3.5rem;
-        color: $dark-blue;
-        margin-bottom: 8rem;
-    }
-
-    &-box {
-        display: flex;
-        justify-content: space-evenly;
-        margin-left: -20rem;
-        margin-right: -20rem;
-        margin-bottom: 6rem;
-
-        @include respond(phone) {
-            margin-left: -41rem;
-            margin-right: -41rem;
-        }
-    }
+  }
 }
 
 .call-to-action {
-    background-image: url(../../images/bg-simplify-section-desktop.svg);
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: $bright-red;
-    padding: 5rem 0;
+  background-image: url(../../images/bg-simplify-section-desktop.svg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $bright-red;
+  padding: 5rem 0;
+
+  @include respond(phone) {
+    padding: 8rem 4rem;
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     @include respond(phone) {
-        padding: 8rem 4rem;
+      flex-direction: column;
     }
-    
-    &__flex {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  }
 
-        @include respond(phone){
-            flex-direction: column;
-        }
+  &__title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 1.2;
+
+    @include respond(tab-small) {
+      // font-size: 3rem;
+      text-align: center;
     }
 
-    &__title {
-        color: #fff;
-        font-weight: 500;
-        font-size: 3.5rem;
-        line-height: 1.2;
-
-        @include respond(tab-small) {
-            // font-size: 3rem;
-            text-align: center;
-        }
-
-        @include respond(phone){
-            margin-bottom: 3rem;
-        }
+    @include respond(phone) {
+      margin-bottom: 3rem;
     }
+  }
 }

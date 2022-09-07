@@ -1,72 +1,69 @@
 .hero {
-    margin-bottom: 6rem;
+  margin-bottom: 6rem;
+  display: flex;
+
+  @include respond(phone) {
+    flex-direction: column-reverse;
+  }
+
+  &__aside {
+    flex: 0 0 50%;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 3rem;
 
-    @include respond(phone){
-        flex-direction: column-reverse;
+    @include respond(phone) {
+      text-align: center;
+      align-items: center;
+      margin-right: 0;
     }
 
-    &__aside {
-        flex: 0 0 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        margin-right: 3rem;
+    & > * {
+      margin-bottom: 3rem;
 
-        @include respond(phone){
-            text-align: center;
-            align-items: center;
-            margin-right: 0;
-        }
+      @include respond(phone) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
 
-        & > * {
-            margin-bottom: 3rem;
+  &__illustration {
+    flex: 0 0 50%;
+    text-align: center;
+  }
 
-            @include respond(phone){
-               margin-bottom: 2rem;
-            }
-        }
+  &__heading {
+    font-size: 5rem;
+    color: $dark-blue;
+
+    @include respond(tab-small) {
+      font-size: 4rem;
     }
 
-    &__illustration {
-        flex: 0 0 50%;
-        text-align: center;
-        
+    @include respond(phone) {
+      margin-bottom: 1rem;
     }
+  }
 
-    &__heading {
-        font-size: 5rem;
-        color: $dark-blue;
+  &__text {
+    color: $dark-rayish-blue;
+    font-weight: $font-weight-light;
+    width: 65%;
 
-        @include respond(tab-small) {
-            font-size: 4rem;
-        }
-
-        @include respond(phone){
-            margin-bottom: 1rem;
-        }
+    @include respond(phone) {
+      width: 90%;
     }
+  }
 
-    &__text {
-        color: $dark-rayish-blue;
-        font-weight: $font-weight-light;
-        width: 65%;
+  &__image {
+    display: block;
+    width: 100%;
 
-        @include respond(phone) {
-            width: 90%;
-        }
+    @include respond(phone) {
+      max-width: 50rem;
+      display: inline-block;
     }
-
-    &__image {
-        display: block;
-        width: 100%;
-        
-        @include respond(phone) {
-            max-width: 50rem;
-            display: inline-block;
-        }
-    }
-
-
+  }
 }

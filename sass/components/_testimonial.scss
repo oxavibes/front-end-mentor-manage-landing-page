@@ -1,45 +1,44 @@
 .testimonial {
-    flex: 0 0 32%;
-    padding: 1rem 4rem;
-    background: $very-light-gray;
+  flex: 0 0 32%;
+  padding: 1rem 4rem;
+  background: $very-light-gray;
+  position: relative;
+  margin-bottom: -1rem;
+
+  @include respond(phone-small) {
+    // flex: 0 0 45%;
+  }
+
+  & > * + * {
+    margin-bottom: 1.5rem;
+  }
+
+  &__user-avatar {
+    top: -4rem;
     position: relative;
-    margin-bottom: -1rem;
+    display: inline-block;
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: -1.5rem;
+  }
 
-    @include respond(phone-small) {
-        // flex: 0 0 45%;
-    }
+  &__user-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $dark-blue;
+  }
 
+  &__user-testimonial {
+    // width: 70%;
+    // display: inline-block;
+    font-size: 1.4rem;
+    word-spacing: 1px;
+    line-height: $font-line-height-sm;
+    font-weight: 300;
+    color: $dark-rayish-blue;
+  }
 
-    & > * + * {
-       margin-bottom: 1.5rem; 
-    }
-
-    &__user-avatar {
-        top: -4rem;
-        position: relative;
-        display: inline-block;
-        width: 6rem;
-        height: 6rem;
-        margin-bottom: -1.5rem;
-    }
-
-    &__user-name {
-        font-size: 1.6rem;
-        font-weight: 700;
-        color: $dark-blue;
-    }
-
-    &__user-testimonial {
-        // width: 70%;
-        // display: inline-block;
-        font-size: 1.4rem;
-        word-spacing: 1px;
-        line-height: $font-line-height-sm;
-        font-weight: 300;
-        color: $dark-rayish-blue;
-    }
-
-    &--hidden {
-        display: none;
-    }
+  &--hidden {
+    display: none;
+  }
 }

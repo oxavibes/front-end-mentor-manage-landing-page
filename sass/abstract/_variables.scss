@@ -1,6 +1,6 @@
 // Primary colors
 $bright-red: hsl(12, 88%, 59%);
-$bright-red-shadow:hsla(12, 88%, 65%, 0.5);
+$bright-red-shadow: hsla(12, 88%, 65%, 0.5);
 $dark-blue: hsl(228, 39%, 23%);
 
 //Neutral colors
@@ -11,15 +11,12 @@ $very-pale-red: hsl(13, 100%, 96%);
 $very-light-gray: hsl(0, 0%, 98%);
 
 $light-bg-color: transparent;
-$dark-bg-color: rgba(0, 0, 0, .3);
+$dark-bg-color: rgba(0, 0, 0, 0.3);
 
 //Font variables
-$font-family: 'Be Vietnam', sans-serif;
+$font-family: "Be Vietnam", sans-serif;
 $font-weight-light: 400;
 $font-weight-ligther: 500;
 $font-weight-bold: 800;
 
 $font-line-height-sm: 1.8;
-
-
-

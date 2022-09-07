@@ -1,55 +1,52 @@
 .btn {
-    font-size: 1rem;
-    font-family: inherit;
-    font-weight: 700;
-    letter-spacing: 1px;
-    cursor: pointer;
-    color: $very-light-gray;
-    display: inline-block;
-    padding: 1rem 2.5rem;
-    border: none;
-    outline: none;
-    border-radius: 100px;
-    text-transform: capitalize;
-    transition: all ease-out .2s;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: $very-light-gray;
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  text-transform: capitalize;
+  transition: all ease-out 0.2s;
 
-   
-    
-    &--primary {
-        background-color: $bright-red;
-        box-shadow: 0px 5px 5px $bright-red-shadow;
-        // border-bottom: 2px solid lighten($bright-red, 15);
+  &--primary {
+    background-color: $bright-red;
+    box-shadow: 0px 5px 5px $bright-red-shadow;
+    // border-bottom: 2px solid lighten($bright-red, 15);
 
-        &:hover {
-            opacity: .75;
-        }
+    &:hover {
+      opacity: 0.75;
     }
+  }
 
-    &--secondary {
-        background-color: #fff;
-        box-shadow: 0px 2px 10px $very-dark-blue-shadow;
-        border-bottom: 2px solid darken(#fff, 15);
-        color: $bright-red;
+  &--secondary {
+    background-color: #fff;
+    box-shadow: 0px 2px 10px $very-dark-blue-shadow;
+    border-bottom: 2px solid darken(#fff, 15);
+    color: $bright-red;
 
-        &:hover {
-            color: lighten($bright-red, 15);
-        }
+    &:hover {
+      color: lighten($bright-red, 15);
     }
+  }
 
-    &--box-shadow-none {
-        box-shadow: none;
+  &--box-shadow-none {
+    box-shadow: none;
+  }
+
+  &--animated {
+    &:hover {
+      transform: translateY(-5px);
     }
+  }
 
-    &--animated {
-        &:hover {
-            transform: translateY(-5px);
-        }
+  &--hidden-tab {
+    @include respond(tab-small) {
+      display: none;
     }
-
-    &--hidden-tab {
-        @include respond(tab-small) {
-            display: none;
-        }
-    }
-
+  }
 }
