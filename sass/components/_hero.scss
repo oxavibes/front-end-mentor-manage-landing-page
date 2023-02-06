@@ -60,6 +60,7 @@
   &__image {
     display: block;
     width: 100%;
+    height: auto;
 
     @include respond(phone) {
       max-width: 50rem;
