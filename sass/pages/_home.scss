@@ -1,4 +1,20 @@
+.bg-pattern-top {
+  background-image: url(../../images/bg-tablet-pattern.svg);
+  background-position: top -100px right -50px;
+  background-repeat: no-repeat;
+  background-size: auto auto;
+}
+
+.bg-pattern-img {
+  position: absolute;
+
+  left: -480px;
+  top: 276px;
+  z-index: -1;
+}
+
 .about {
+  position: relative;
   font-size: 1.4rem;
   padding-top: 6rem;
   margin-bottom: 6rem;
